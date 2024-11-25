@@ -24,7 +24,6 @@ void merge(vector<int> &v, int low, int mid, int high){
     }
     for(int i = low; i <= high; i++) v[i] = temp[i - low];
 }
-
 void mergeSort(vector<int> &v, int low, int high){
     if(low == high) return;
     int mid = low + (high - low)/2;

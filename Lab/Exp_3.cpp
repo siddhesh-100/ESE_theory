@@ -5,10 +5,7 @@ class Node{
     public:
         int sweetness;
         Node* next;
-        Node(int val){
-            this -> sweetness = val;
-            this -> next = nullptr;
-        }
+        Node(int val) : sweetness(val), next(nullptr) {}
 };
 void insertInSortedOrder(Node* &head, int k){
     Node* newnode = new Node(k);
